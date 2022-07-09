@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Question2 {
+public class Question02 {
 	public static void main(String[] args) throws IOException {
 
 		//キーボードからの数値入力
@@ -12,17 +12,24 @@ public class Question2 {
 		//インスタンス生成
 		BufferedReader a = new BufferedReader(new InputStreamReader(System.in));
 
-		String str = a.readLine();
-		int m = Integer.parseInt(str);
+		try {
 
-		//コンソールから入力された数値を読み込みint型変数に格納
-		//int m = Integer.parseInt(a.readLine());
+			String str = a.readLine();
+			int m = Integer.parseInt(str);
 
-		//偶数か奇数判定
-		if (m % 2 == 0) {
-			System.out.println("偶数です");
-		} else {
-			System.out.println("奇数です");
+			//コンソールから入力された数値を読み込みint型変数に格納
+			//int m = Integer.parseInt(a.readLine());
+
+			//偶数か奇数判定
+			if (m % 2 == 0) {
+				System.out.println("偶数です");
+			} else {
+				System.out.println("奇数です");
+			}
+		} catch (NumberFormatException e) {
+
+			System.out.println("整数以外が入力されました");
+
 		}
 	}
 }
