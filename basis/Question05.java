@@ -34,9 +34,10 @@ public class Question05 {
 
 			System.out.println("0では割り算できません");
 
+		} finally {
+			System.out.println("終了");
+			//scannerクローズ
+			scanner.close();
 		}
-		System.out.println("終了");
-		//scannerクローズ
-		scanner.close();
 	}
 }
