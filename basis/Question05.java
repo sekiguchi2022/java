@@ -23,21 +23,20 @@ public class Question05 {
 			ans = 100 / input;
 
 			System.out.println("割り算結果は" + ans + "です");
-			System.out.println("終了");
 
 			//整数以外の値が入力された場合
 		} catch (NumberFormatException e) {
 
 			System.out.println("整数以外の値が入力されました");
-			System.out.println("終了");
 
 			//入力された整数が0の場合
 		} catch (ArithmeticException ae) {
 
 			System.out.println("0では割り算できません");
-			System.out.println("終了");
+
 		}
-        //scannerクローズ
+		System.out.println("終了");
+		//scannerクローズ
 		scanner.close();
 	}
 }
