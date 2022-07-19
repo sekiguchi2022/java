@@ -19,7 +19,7 @@ public class Question06 {
 
 			//入力された整数と曜日が対応するか判定
 			String oneweek = null;
-            //入力された整数と曜日が対応してるか判定
+			//入力された整数と曜日が対応してるか判定
 			switch (weeknumber) {
 				case 0:
 					oneweek = "日曜日";
@@ -45,7 +45,7 @@ public class Question06 {
 
 				default://0～6以外の整数が入力された場合
 					System.out.println("0～6の範囲で入力してください");
-					 return;
+					return;
 			}
 			System.out.println("本日は" + oneweek + "です");
 
@@ -54,8 +54,9 @@ public class Question06 {
 			System.out.println("整数以外の値が入力されました");
 			return;
 
+		} finally {
+			//Scannerクローズ
+			scanner.close();
 		}
-		//Scannerクローズ
-		scanner.close();
 	}
 }
