@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Question09 {
 
 	public static void main(String args[]) {
+
+		//Scanner生成
+		Scanner scanner = new Scanner(System.in);
+
 		try {
-			//Scanner生成
-			Scanner scanner = new Scanner(System.in);
 
 			//メッセージ出力
 			System.out.println("5つの整数を入力してください");
@@ -48,10 +50,11 @@ public class Question09 {
 
 				}
 			}
-			System.out.print("昇順ソート結果は");
+			System.out.print("昇順ソート結果は" + " ");
 			//debug
 			for (int x : array) {
-				System.out.print(" " + x + " ");
+				System.out.print(x);
+				System.out.print(" ");
 
 			}
 
@@ -65,6 +68,9 @@ public class Question09 {
 		} catch (NumberFormatException e) {
 			//整数以外の値が入力された場合
 			System.out.println("整数以外の値が入力されました");
+
 		}
+		scanner.close();
+
 	}
 }
