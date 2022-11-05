@@ -11,6 +11,7 @@ public class Question10 {
 			//メッセージ出力
 			System.out.println("整数を入力してください");
 
+			//入力された数をint型変数inputに格納
 			int input = Integer.parseInt(scanner.nextLine());
 
 			//debug
@@ -23,6 +24,10 @@ public class Question10 {
 
 			//	System.out.println(ans1);
 			//	System.out.println(ans2);
+
+		} catch (NumberFormatException e) {
+			//整数以外の値が入力された場合
+			System.out.println("整数以外の値が入力されました");
 
 		}
 
