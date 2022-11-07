@@ -30,7 +30,7 @@ public class Question11 {
 		}
 	}
 
-	//27行目より呼び出されたメソッド
+	//23行目より呼び出されたメソッド
 	public static int multiplication(int input1, int input2) {
 		//1つ目と2つ目の整数を掛け算しans1へ格納
 		int ans1 = input1 * input2;
@@ -41,7 +41,7 @@ public class Question11 {
 		//掛け算結果を返す
 		return ans1;
 	}
-
+    //25行目より呼び出されたメソッド
 	public static int division(int input1, int input2) {
 		//掛け算結果を2で割る
 		int ans2 = input1 * input2 / 2;
