@@ -21,8 +21,19 @@ public class Question11 {
 
 			//引数の掛け算を呼び出すメソッド
 			multiplication(input1, input2);
+
+			int ans1 = input1 * input2;
+
 			//掛け算の結果を2で割るためのメソッドを呼び出す
 			division(input1, input2);
+
+			int ans2 = input1 * input2 / 2;
+
+			//入力された整数を掛け算した結果を出力
+			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果は" + " " + ans1 + " " + "です");
+
+			//掛け算結果を2で割った結果を出力
+			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果を2で割った値は" + " " + ans2 + " " + "です");
 
 		} catch (NumberFormatException e) {
 			//整数以外の値が入力された場合
@@ -30,27 +41,25 @@ public class Question11 {
 		}
 	}
 
-	//23行目より呼び出されたメソッド
+	//23行目multiplicationメソッドより呼び出されたメソッド
 	public static int multiplication(int input1, int input2) {
-		//1つ目と2つ目の整数を掛け算しans1へ格納
-		int ans1 = input1 * input2;
 
-		//入力された整数を掛け算した結果を出力
-		System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果は" + " " + ans1 + " " + "です");
+		//1つ目と2つ目の整数を掛け算しans1へ格納
+		//int ans1 = input1 * input2;
 
 		//掛け算結果を返す
-		return ans1;
+		return input1 * input2;
 	}
-    //25行目より呼び出されたメソッド
+
+	//26行目divisionメソッドより呼び出されたメソッド
 	public static int division(int input1, int input2) {
-		//掛け算結果を2で割る
-		int ans2 = input1 * input2 / 2;
 
 		//debug
 		//System.out.println(ans2);
-		//掛け算結果を2で割った結果を出力
-		System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果を2で割った値は" + " " + ans2 + " " + "です");
-		//2で割った結果を返す
-		return ans2;
+
+		//掛け算結果を2で割る
+		//int ans2 = input1 * input2 / 2;
+
+		return input1 * input2 / 2;
 	}
 }
