@@ -44,22 +44,17 @@ public class Question11 {
 	//23行目multiplicationメソッドより呼び出されたメソッド
 	public static int multiplication(int input1, int input2) {
 
-		//1つ目と2つ目の整数を掛け算しans1へ格納
-		//int ans1 = input1 * input2;
-
-		//掛け算結果を返す
+		//掛け算結果を返す(25行目右辺)
 		return input1 * input2;
 	}
 
-	//26行目divisionメソッドより呼び出されたメソッド
+	//28行目divisionメソッドより呼び出されたメソッド
 	public static int division(int input1, int input2) {
 
 		//debug
 		//System.out.println(ans2);
 
-		//掛け算結果を2で割る
-		//int ans2 = input1 * input2 / 2;
-
+		//掛け算結果を2で割った結果を返す(30行目右辺)
 		return input1 * input2 / 2;
 	}
 }
