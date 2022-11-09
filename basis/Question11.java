@@ -22,16 +22,14 @@ public class Question11 {
 			//引数の掛け算を呼び出すメソッド
 			multiplication(input1, input2);
 
-			int ans1 = input1 * input2;
-
 			//掛け算の結果を2で割るためのメソッドを呼び出す
 			division(input1, input2);
 
-			int ans2 = input1 * input2 / 2;
-
+			int ans1 = input1 * input2;
 			//入力された整数を掛け算した結果を出力
 			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果は" + " " + ans1 + " " + "です");
 
+			int ans2 = input1 * input2 / 2;
 			//掛け算結果を2で割った結果を出力
 			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果を2で割った値は" + " " + ans2 + " " + "です");
 
@@ -44,8 +42,9 @@ public class Question11 {
 	//23行目multiplicationメソッドより呼び出されたメソッド
 	public static int multiplication(int input1, int input2) {
 
+		int ans1 = input1 * input2;
 		//掛け算結果を返す(25行目右辺)
-		return input1 * input2;
+		return ans1;
 	}
 
 	//28行目divisionメソッドより呼び出されたメソッド
@@ -54,7 +53,8 @@ public class Question11 {
 		//debug
 		//System.out.println(ans2);
 
+		int ans2 = input1 * input2 / 2;
 		//掛け算結果を2で割った結果を返す(30行目右辺)
-		return input1 * input2 / 2;
+		return ans2;
 	}
 }
