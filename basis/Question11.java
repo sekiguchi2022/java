@@ -5,56 +5,52 @@ import java.util.Scanner;
 public class Question11 {
 	public static void main(String args[]) {
 
-		//Scanner生成(自動close）
+		//①Scanner生成
 		try (Scanner scanner = new Scanner(System.in);) {
 
-			//メッセージ出力
+			//②メッセージ出力
 			System.out.println("整数を入力してください");
-
+			//③メッセージ出力
 			System.out.print("1個目:");
-			//1つ目の整数を入力および変換後int型変数に格納
-			int input1 = Integer.parseInt(scanner.nextLine());
-
+			//④1つ目の整数の入力
+			int inputOne = Integer.parseInt(scanner.nextLine());
+			//⑤メッセージ出力
 			System.out.print("2個目:");
-			//2つ目の整数を入力および変換後int型変数に格納
-			int input2 = Integer.parseInt(scanner.nextLine());
+			//⑥2つ目の整数の入力
+			int inputTwo = Integer.parseInt(scanner.nextLine());
 
-			//引数の掛け算を呼び出すメソッド
-			multiplication(input1, input2);
+			//⑦multiplicationメソッドの呼び出し
+			int ans1 = multiplication(inputOne, inputTwo);
 
-			//掛け算の結果を2で割るためのメソッドを呼び出す
-			division(input1, input2);
+			//⑫divisionメソッドの呼び出し
+			int ans2 = division(inputOne, inputTwo);
 
-			int ans1 = input1 * input2;
-			//入力された整数を掛け算した結果を出力
-			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果は" + " " + ans1 + " " + "です");
-
-			int ans2 = input1 * input2 / 2;
-			//掛け算結果を2で割った結果を出力
-			System.out.println(input1 + " " + "と" + " " + input2 + " " + "の掛け算結果を2で割った値は" + " " + ans2 + " " + "です");
+			//⑪掛け算結果を出力
+			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果の値は" + " " + multiplication(inputOne, inputTwo) + "です");
+			//⑯掛け算結果を2で割った結果を出力
+			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果を2で割った値は" + " " + division(inputOne, inputTwo)  + "です");
 
 		} catch (NumberFormatException e) {
 			//整数以外の値が入力された場合
 			System.out.println("整数以外の値が入力されました");
+
 		}
 	}
 
-	//23行目multiplicationメソッドより呼び出されたメソッド
-	public static int multiplication(int input1, int input2) {
-
-		int ans1 = input1 * input2;
-		//掛け算結果を返す(25行目右辺)
+	//⑧⑦より呼び出されたメソッド
+	public static int multiplication(int inputOne, int inputTwo) {
+		//⑨掛け算処理
+		int ans1 = inputOne * inputTwo;
+		//⑩掛け算結果を25行目右辺に返す
 		return ans1;
+
 	}
 
-	//28行目divisionメソッドより呼び出されたメソッド
-	public static int division(int input1, int input2) {
-
-		//debug
-		//System.out.println(ans2);
-
-		int ans2 = input1 * input2 / 2;
-		//掛け算結果を2で割った結果を返す(30行目右辺)
+	//⑬⑫より呼び出されたメソッド
+	public static int division(int inputOne, int inputTwo) {
+		//⑭掛け算結果を2で割る
+		int ans2 = inputOne * inputTwo / 2;
+		//⑮⑭の結果を26行目の右辺に返す
 		return ans2;
 	}
 }
