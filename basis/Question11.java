@@ -26,9 +26,9 @@ public class Question11 {
 			int ans2 = division(inputOne, inputTwo);
 
 			//⑪掛け算結果を出力
-			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果の値は" + " " + multiplication(inputOne, inputTwo) + "です");
+			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果の値は" + " " + ans1 + "です");
 			//⑯掛け算結果を2で割った結果を出力
-			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果を2で割った値は" + " " + division(inputOne, inputTwo)  + "です");
+			System.out.println(inputOne + " " + "と" + " " + inputTwo + " " + "の掛け算結果を2で割った値は" + " " + ans2 + "です");
 
 		} catch (NumberFormatException e) {
 			//整数以外の値が入力された場合
