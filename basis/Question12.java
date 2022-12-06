@@ -21,6 +21,7 @@ public class Question12 {
 			if (!(inputNum == 1) && !(inputNum == 2)) {//1,2以外の整数が入力された場合
 				//メッセージ出力
 				System.out.println("1～2の範囲で入力してください");
+				return;
 			}
 
 			//氏名番号で分岐
@@ -37,7 +38,7 @@ public class Question12 {
 				//Personインスタンスの氏名を出力
 				System.out.println("私の名前は" + " " + person.getName() + " " + "です");
 
-			} else if (inputNum == 2) {//氏名が入力されない場合
+			} else {//氏名が入力されない場合
 				//"ダミー"をインスタンスに設定
 				Person person = new Person("ダミー");
 
