@@ -7,22 +7,22 @@ public class Question13 {
 
 		//Scanner生成
 		try (Scanner scanner = new Scanner(System.in);) {
-			//①足し算結果⇒引き算結果のメッセージ出力
+			//足し算結果⇒引き算結果のメッセージ出力
 			System.out.println("1：足し算結果⇒引き算結果の順で出力する");
-			//②引き算結果⇒足し算結果のメッセージ出力
+			//引き算結果⇒足し算結果のメッセージ出力
 			System.out.println("2：引き算結果⇒足し算結果の順で出力する");
 
-			//③キーボード入力受付メッセージ出力
+			//キーボード入力受付メッセージ出力
 			System.out.print("番号を選択してください（1,2）：");
 
-			//④メニュー番号受付_1,2
+			//メニュー番号受付_1,2
 			int input = Integer.parseInt(scanner.nextLine());
 
 			//1,2以外の整数が入力された場合
 			if (!(input == 1) && !(input == 2)) {
 				//メッセージ出力
 				System.out.println("1～2の範囲で入力してください");
-
+                //1、2以外なら処理終了
 				return;
 
 			}
