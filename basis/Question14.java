@@ -22,18 +22,14 @@ public class Question14 {
 			CalculateImpl calculateImpl = new CalculateImpl();
 
 			//CalculateImplインスタンスのmultiplicationメソッドを呼び出す
-			calculateImpl.multiplication(num1, num2);
+			int ans1 = calculateImpl.multiplication(num1, num2);
 
 			//CalculateImplインスタンスのdivisionメソッドを呼び出す
-			calculateImpl.division(num1, num2);
+			int ans2 = calculateImpl.division(num1, num2);
 
-			int ans1;
-			ans1 = num1 * num2;
 			//掛け算結果を出力
 			System.out.println(num1 + " と " + num2 + " の掛け算結果の値は " + ans1 + " です");
 
-			int ans2;
-			ans2 = ans1 / 2;
 			//掛け算結果を2で割った結果を出力
 			System.out.println(num1 + " と " + num2 + " の掛け算結果を2で割った値は " + ans2 + " です");
 
