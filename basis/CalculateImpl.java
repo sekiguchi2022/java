@@ -14,10 +14,8 @@ public class CalculateImpl implements Calculate {
 
 	public int division(int num1, int num2) {
 
-		//検討中
-		//int ans1 = 0;
 		//掛け算結果を2で割る
-		int ans2 = ans1 / 2;
+		int ans2 = num1 * num2 / 2;
 
 		//引数の掛け算結果を2で割った結果をmainクラスに返す
 		return ans2;
